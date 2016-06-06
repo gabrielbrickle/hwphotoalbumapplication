@@ -74,13 +74,13 @@ li:hover {
   opacity: .4;
 }
 
+
 .albums img {
   display: inline-flex;
-      width: 300px;
-      height: 250px;
-      border-radius: 57px;
-      margin-left: 75px;
-
+  width: 300px;
+  height: 250px;
+  border-radius: 57px;
+  margin-left: 75px;
 }
 
 .album {
@@ -94,10 +94,7 @@ section .albums {
 }
 
 .albumDetail {
-  /*display: inline-flex;
-  width: 300px;
-  height: 250px;
-  border-radius: 57px;*/
+  display: inline-flex;
   margin-left: 75px;
     }
 

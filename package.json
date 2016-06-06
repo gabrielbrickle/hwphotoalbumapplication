@@ -1,0 +1,26 @@
+{
+  "name": "hwphotoalbum",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w styles.scss styles.css",
+    "start": "serve & npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielbrickle/hwphotoalbumapplication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielbrickle/hwphotoalbumapplication/issues"
+  },
+  "homepage": "https://github.com/gabrielbrickle/hwphotoalbumapplication#readme",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "description": ""
+}
