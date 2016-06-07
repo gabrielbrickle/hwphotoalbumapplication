@@ -93,8 +93,9 @@ var photoAlbum = {
     $('header').addClass('active').removeClass('hidden');
     $('.homebutton').removeClass('hidden');
     $('.images').css("padding-top", '80px');
+    // $('.title').removeClass('hidden').addClass('active');
   })
-    },
+  },
 ////nathans code
   templification: function(template) {
   return _.template(template);
@@ -106,39 +107,23 @@ var photoAlbum = {
 }
 }
 
-$(document).ready(function () {
 
-///Attempt to only show one large image
-///Attemp #1
-// var albumsStr = '';
-// albums.forEach(function (item, idx, arr) {
-//   albumsStr += `<div class=".photoDetail" >
-//                 <img src="${item.photo}" alt="">
-//                 <h3>${item.caption}</h3>
-//               </div>`;
-// })
-// console.log(this);
-// $('.photoDetail').html(albumsStr);
-// $('.albums').on('click', '.album', function (event) {
-//     console.log($(this).data('id'));
-//Attempt #2
-// $('img').on('click', function (event) {
-//     console.log($(this).data('id'));
-//     var albumIds = $(this).data('id');
-//     var selectedAlbumPic = albums.filter(function (item, idx, arr) {
-//       return item.id === albumIds;
-//     })
-//     console.log("SELECTED PHOTO", selectedAlbumPic);
-//     var photosString = '';
-//     selectedAlbumPic[0].pictures.forEach(function (item, idx, arr) {
-//       photosString += `<div class="photo">
-//                       <img src="${item.photo}" alt="">
-//                     </div>`
-//     });
-//     // $('.albumDetail').addClass('active');
-//     $('.albums').addClass('hidden').removeClass('active');
-//     $('.albumDetail').html(photosString).removeClass('hidden').addClass('active');
-//
+//////trying to select one photo and enlarge it. right now it hides the cover photos, but does not hide the 6 album photos
+
+// $('.albumDetail').on('click', '.photo', function(event){
+//   event.preventDefault();
+//   var photoId = $(this).data('id');
+//   var clickedPhoto = albums.filter(function (item, idx, arr) {
+//     return item.photo === photoId;
 //   })
+//
+//   var chosenBigPic = '';
+//   clickedPhoto[0].pictures.forEach(function(item, idx, arr){
+//     chosenBigPic += photoAlbum.htmlGenerator(photoTemplate.albumphotos,item)
+//   });
+//   $('.photoDetail').html(chosenBigPic);
+//   $('.albumDetail, img').addClass('hidden');
+//   $('.albums').addClass('hidden');
+//    $('.albums, img').not(this).removeClass('active');
+//   // $(this).removeClass('hidden');
 // })
-}) //Closing Tag

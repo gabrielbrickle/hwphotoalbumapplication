@@ -10,8 +10,8 @@ var photoTemplate = {
   albumphotos:
       `
         <div class="photo">
-        <h3> <%=caption %></h3>
         <img src= "<%= photo %>" >
+        <h3> <%=caption %></h3>
         </div>
       `
 }
